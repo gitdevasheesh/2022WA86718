@@ -4,8 +4,12 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
+import static org.junit.Assert.assertTrue; // For the JUnit 4 test
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+ /* Unit test for simple App.
  */
 public class AppTest 
 {
@@ -18,17 +22,17 @@ public class AppTest
         assertTrue( true );
     }
 
-     @Test
+    @org.junit.jupiter.api.Test
     void greetIsNotEmpty() {
         assertFalse(new App().greet().isEmpty());
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void addWorks() {
         assertEquals(5, new App().add(2, 3));
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void multiplyWorks() {
         assertEquals(20, new App().multiply(4, 5));
     }
